@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>follower analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header>
+        <img id="img1" src="image/logo.png" alt="">
+        <h1 id="title">Insta Analyzer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -------------------------------------------------------->
+    <div id="conatiner">
+        
+        <div class="card">
+            <div class="content">
+              <p class="heading">Followers:
+              </p><p class="para">
+                Your Followers will show here!!
+              </p>
+              
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="content">
+              <p class="heading">Followings:
+              </p><p class="para">
+                Your Followings will show here!!
+              </p>
+              
+            </div>
+          </div>
+        </div>
+    <!-- ------------------------------------------------------ -->
+   <center> <div class="container">
+        <div id="overlay" onclick="off()">
+            <div id="list"><h1>username : <p id="resultP">lzjdfndskzfjn</p></h1></div>
+            
+        </div>  
+        <button onclick="on()">They don't follow you back</button>
+        <div id="overlay" onclick="off()">
+            <div id="list"><h1>overlay</h1></div>
+        </div>
+        <button onclick="on()">You don't follow them back</button>
+    </div>
+</center>
+    
+</body>
+<script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+    </script>
+</html>
